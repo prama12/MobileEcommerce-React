@@ -13,3 +13,12 @@ ul .active{
 .max-w{
      @apply max-w-[1500px] mx-auto
 }
+
+.bg-gradient{
+     @apply bg-gradient-to-bl from-green-300 via-blue-500 to-purple-600
+}
+
+.bg-login{
+     background: url('/public/Images/login-bg.jpg') no-repeat center center/cover ;
+
+}

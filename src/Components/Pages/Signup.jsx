@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 const Signup = () => {
      return (
           <>
-               <div className='bg-blue-600 px-5 sm:px-16 py-8'>
+               <div className='bg-login px-5 sm:px-16 py-8'>
                     <div className='md:grid grid-cols-2 gap-5 w-full max-w'>
                          <div>
                               <h1 className='text-white text-2xl font-bold mb-8'>My Account</h1>
@@ -67,9 +67,9 @@ const Signup = () => {
                                    </div>
                               </div>
                          </div>
-                         <div className=' rounded-md overflow-hidden hidden md:flex'>
+                         {/* <div className=' rounded-md overflow-hidden hidden md:flex'>
                               <img src="Images/mobile.png" className='w-full h-full' />
-                         </div>
+                         </div> */}
                     </div>
                </div>
           </>
