@@ -5,7 +5,7 @@ const Footer = () => {
      return (
           <>
                <section className='w-full bg-[#393E46] sm:px-16 py-14 px-5'>
-                    <div className='md:grid md:grid-cols-12 max-w gap-8 w-full text-white flex flex-col'>
+                    <div className='md:grid md:grid-cols-12 max-w gap-6 md:gap-16 w-full text-white flex flex-col'>
                          <div className=' md:col-span-5 flex flex-col gap-5'>
                               <NavLink to='/' className='flex gap-1 items-center font-bold cursor-pointer'>
                                    <div>
@@ -18,11 +18,11 @@ const Footer = () => {
                               </div>
 
                               <div>
-                                   <button className='bg-white hover:bg-blue-600 px-4 py-2 text-blue-600 hover:text-white text-sm font-semibold rounded-md shadow-sm shadow-black hover:shadow-md'><NavLink to="/login">Login Now</NavLink></button>
+                                   <button className='bg-white hover:bg-blue-600 px-8 py-2 text-blue-600 hover:text-white text-sm font-semibold rounded-sm shadow-sm shadow-black hover:shadow-md'><NavLink to="/login">Login Now</NavLink></button>
                               </div>
                          </div>
-                         <div className=' md:col-span-7 lg:grid w-full lg:grid-cols-12 flex flex-col gap-5 text-xs font-thin '>
-                              <div className='lg:col-span-8 grid grid-cols-3'>
+                         <div className=' md:col-span-7 lg:grid w-full lg:grid-cols-12 flex flex-col gap-5 text-xs font-thin'>
+                              <div className='lg:col-span-8 grid grid-cols-3 w-full '>
                                    <div className='flex flex-col gap-3'>
                                         <h1 className='text-sm font-bold'>Home</h1>
                                         <div className='flex flex-col gap-1'>

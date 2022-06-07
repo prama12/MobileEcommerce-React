@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 const Navbar = () => {
      return (
           <>
-               <nav className='w-full bg-white border-b border-gray-50 px-16 py-5 shadow-sm sticky top-0  '>
+               <nav className='w-full bg-white border-b border-gray-50 px-5 md:px-16 py-5 shadow-sm sticky top-0  '>
                     <div className='w-full max-w flex items-center justify-between'>
                          <NavLink to='/' className='flex gap-1 items-center text-sm font-bold hover:text-black text-gray-600 cursor-pointer'>
                               <div>

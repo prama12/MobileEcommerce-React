@@ -9,6 +9,8 @@ import Home from './Pages/Home'
 import MyProfile from './Pages/MyProfile'
 import Shop from './Pages/Shop'
 import Wishlist from './Pages/Wishlist'
+import Login from './Pages/Login'
+import Signup from './Pages/Signup'
 
 const Routing = () => {
      return (
@@ -23,6 +25,8 @@ const Routing = () => {
                          <Route path='/addtocart' element={<Checkout />} />
                          <Route path='/wishlist' element={<Wishlist />} />
                          <Route path='/myProfile' element={<MyProfile />} />
+                         <Route path='/login' element={<Login />} />
+                         <Route path='/signup' element={<Signup />} />
                     </Routes>
                     <Footer />
                </Router>
