@@ -4,8 +4,8 @@ import { NavLink } from 'react-router-dom'
 const Navbar = () => {
      return (
           <>
-               <nav className='bg-white border-b border-gray-50 px-20 py-5 w-full shadow-sm sticky top-0 flex items-center '>
-                    <div className='w-full flex items-center justify-between'>
+               <nav className='w-full bg-white border-b border-gray-50 px-16 py-5 shadow-sm sticky top-0  '>
+                    <div className='w-full max-w flex items-center justify-between'>
                          <NavLink to='/' className='flex gap-1 items-center text-sm font-bold hover:text-black text-gray-600 cursor-pointer'>
                               <div>
                                    <img src="Images/Logo.png" alt="logo" />
@@ -13,7 +13,7 @@ const Navbar = () => {
                               <div>Online Mobile Store</div>
                          </NavLink>
                          <div className='flex gap-6 items-center text-xs font-semibold'>
-                              <ul className='flex items-center gap-6 text-gray-800 '>
+                              <ul className='hidden lg:flex items-center gap-6 text-gray-800 '>
                                    <li >
                                         <NavLink className='linklist' to='/'>Home</NavLink>
                                    </li>
@@ -91,7 +91,6 @@ const Navbar = () => {
                                                   />
                                              </svg>
                                         </button>
-
                                    </div>
                               </div>
                          </div>
