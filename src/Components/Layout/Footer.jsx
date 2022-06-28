@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 const Footer = () => {
      return (
@@ -18,7 +18,7 @@ const Footer = () => {
                               </div>
 
                               <div>
-                                   <button className='bg-white hover:bg-blue-600 px-8 py-2 text-blue-600 hover:text-white text-sm font-semibold rounded-sm shadow-sm shadow-black hover:shadow-md'><NavLink to="/login">Login Now</NavLink></button>
+                                   <NavLink to="/login"> <button className='bg-white hover:bg-blue-600 px-8 py-2 text-blue-600 hover:text-white text-sm font-semibold rounded-sm shadow-sm shadow-black hover:shadow-md animation'>Login Now</button></NavLink>
                               </div>
                          </div>
                          <div className=' md:col-span-7 lg:grid w-full lg:grid-cols-12 flex flex-col gap-5 text-xs font-thin'>
@@ -56,25 +56,26 @@ const Footer = () => {
                                    <h1 className='text-sm font-bold'>Contact</h1>
                                    <div className='flex flex-col gap-3'>
                                         <p><a>mangcoding@gmail.com</a></p>
-                                        <ul className='flex gap-5'>
+                                        <ul className='flex gap-3'>
                                              <li>
-                                                  <a>
-                                                       <img src='Images/facebook.png' />
+                                                  <a href="https://facebook.com" target='_blank' className='border-2 px-2 py-1 rounded text-sm    text-white hover:bg-blue-600 hover:border-blue-600 animation' >
+                                                       <i className="fa-brands fa-facebook-square"></i>
                                                   </a>
                                              </li>
                                              <li>
-                                                  <a>
-                                                       <img src='Images/twetter.png' />
+                                                  <a href="https://twitter.com" target='_blank' className='border-2 px-2 py-1 rounded text-sm text-white hover:bg-white hover:text-blue-600 hover:border-white animation   ' >
+                                                       <i className="fa-brands fa-twitter"></i>
                                                   </a>
                                              </li>
                                              <li>
-                                                  <a>
-                                                       <img src='Images/linkedin.png' />
+                                                  <a href="https://linkedin.com" target='_blank' className='border-2 px-2 py-1 rounded text-sm    text-white hover:bg-blue-600 hover:border-blue-600 animation' >
+                                                       <i className="fa-brands fa-linkedin"></i>
                                                   </a>
                                              </li>
                                              <li>
-                                                  <a>
-                                                       <img src='Images/instagram.png' />
+                                                  <a href="https://instagram.com" target='_blank' className='border-2 px-2 py-1 rounded text-sm    text-white bg-gradient-to-r from-[#393E46] to-[#393E46]  transition-all duration-500 ease-in-out hover:from-pink-500 hover:to-yellow-200' >
+                                                       <i className="fa-brands fa-instagram"></i>
+
                                                   </a>
                                              </li>
 

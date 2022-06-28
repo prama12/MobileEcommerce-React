@@ -67,9 +67,6 @@ const Signup = () => {
                                    </div>
                               </div>
                          </div>
-                         {/* <div className=' rounded-md overflow-hidden hidden md:flex'>
-                              <img src="Images/mobile.png" className='w-full h-full' />
-                         </div> */}
                     </div>
                </div>
           </>

@@ -22,3 +22,7 @@ ul .active{
      background: url('/public/Images/login-bg.jpg') no-repeat center center/cover ;
 
 }
+
+.animation{
+     @apply transition-all duration-200 ease-linear
+}
