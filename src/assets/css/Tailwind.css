@@ -11,11 +11,7 @@ ul .active{
 }
 
 .max-w{
-     @apply max-w-[1500px] mx-auto
-}
-
-.bg-gradient{
-     @apply bg-gradient-to-bl from-green-300 via-blue-500 to-purple-600
+     @apply max-w-[1700px] mx-auto
 }
 
 .bg-login{
@@ -25,4 +21,8 @@ ul .active{
 
 .animation{
      @apply transition-all duration-200 ease-linear
+}
+
+.hero-gradient{
+     background: linear-gradient(180deg, #7D89FF 0%, #AB40FF 66.67%);
 }

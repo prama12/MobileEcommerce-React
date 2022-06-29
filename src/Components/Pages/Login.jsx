@@ -25,13 +25,13 @@ const Login = () => {
                                         <label className="block  text-sm font-bold mb-2 text-white" for="username">
                                              Email
                                         </label>
-                                        <input className="shadow-sm  border rounded-sm w-full py-2 px-3 " id="email" type="email" placeholder="Email" />
+                                        <input className="shadow-sm border rounded-sm w-full py-2 px-3 focus:outline-none " id="email" type="email" placeholder="Email" />
                                    </div>
                                    <div className="">
                                         <label className="block text-white text-sm font-bold mb-2" for="password">
                                              Password
                                         </label>
-                                        <input className="shadow appearance-none border border-red rounded-sm w-full py-2 px-3  mb-3" id="password" type="password" placeholder="Password" />
+                                        <input className="shadow appearance-none border border-red rounded-sm w-full py-2 px-3 focus:outline-none  mb-3" id="password" type="password" placeholder="Password" />
                                    </div>
                                    <div className='flex items-center justify-between mb-6'>
                                         <div class="form-check text-xs flex items-center">
@@ -48,7 +48,6 @@ const Login = () => {
                                    </div>
                                    <div className="flex items-center justify-end">
                                         <button className='bg-white hover:bg-gray-200 px-8 py-2 text-blue-600 text-sm font-semibold rounded-sm shadow-sm shadow-black hover:shadow-md'><NavLink to="/myProfile">Login</NavLink></button>
-
                                    </div>
                               </div>
                          </div>

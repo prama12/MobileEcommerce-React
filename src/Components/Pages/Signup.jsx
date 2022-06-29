@@ -26,32 +26,32 @@ const Signup = () => {
                                              <label className="block  text-sm font-bold mb-2 text-white" for="firstname">
                                                   First Name
                                              </label>
-                                             <input className="shadow-sm  border rounded-sm w-full py-2 px-3 " id="firstname" type="text" placeholder="First Name" />
+                                             <input className="shadow-sm  border rounded-sm w-full py-2 px-3 focus:outline-none " id="firstname" type="text" placeholder="First Name" />
                                         </div>
                                         <div className="">
                                              <label className="block  text-sm font-bold mb-2 text-white" for="lastname">
                                                   Last Name
                                              </label>
-                                             <input className="shadow-sm  border rounded-sm w-full py-2 px-3 " id="lastname" type="text" placeholder="Last Name" />
+                                             <input className="shadow-sm  border rounded-sm w-full py-2 px-3 focus:outline-none " id="lastname" type="text" placeholder="Last Name" />
                                         </div>
                                    </div>
                                    <div className="mb-4">
                                         <label className="block  text-sm font-bold mb-2 text-white" for="email">
                                              Email
                                         </label>
-                                        <input className="shadow-sm  border rounded-sm w-full py-2 px-3 " id="email" type="email" placeholder="Email" />
+                                        <input className="shadow-sm  border rounded-sm w-full py-2 px-3 focus:outline-none " id="email" type="email" placeholder="Email" />
                                    </div>
                                    <div className="mb-4">
                                         <label className="block text-white text-sm font-bold mb-2" for="password">
                                              Password
                                         </label>
-                                        <input className="shadow appearance-none border border-red rounded-sm w-full py-2 px-3  mb-3" id="password" type="password" placeholder="Password" />
+                                        <input className="shadow appearance-none border border-red rounded-sm w-full py-2 px-3 focus:outline-none  mb-3" id="password" type="password" placeholder="Password" />
                                    </div>
                                    <div className="">
-                                        <label className="block text-white text-sm font-bold mb-2" for="password">
+                                        <label className="block text-white text-sm font-bold mb-2 " for="password">
                                              Re-Password
                                         </label>
-                                        <input className="shadow appearance-none border border-red rounded-sm w-full py-2 px-3  mb-3" id="password" type="password" placeholder="Password Again" />
+                                        <input className="shadow appearance-none border border-red rounded-sm w-full py-2 px-3 focus:outline-none  mb-3" id="password" type="password" placeholder="Password Again" />
                                    </div>
                                    <div className='flex items-center mb-6'>
                                         <div class="form-check text-xs flex items-center">
