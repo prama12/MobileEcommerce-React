@@ -66,7 +66,7 @@ const Navbar = () => {
                                         </NavLink>
                                    </li>
                                    <li>
-                                        <NavLink to="/myAccount" className='linklist'>
+                                        <NavLink to="/myProfile" className='linklist'>
                                              <svg
                                                   className='w-5'
                                                   xmlns="http://www.w3.org/2000/svg"
