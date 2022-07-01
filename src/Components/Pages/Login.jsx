@@ -47,7 +47,7 @@ const Login = () => {
                                         </div>
                                    </div>
                                    <div className="flex items-center justify-end">
-                                        <NavLink to="/myProfile">  <button className='bg-white hover:bg-gray-200 px-8 py-2 text-blue-600 text-sm font-semibold rounded-sm shadow-sm shadow-black hover:shadow-md'>Login</button></NavLink>
+                                        <NavLink to="/myProfile"><button className='btn'>Login</button></NavLink>
                                    </div>
                               </div>
                          </div>

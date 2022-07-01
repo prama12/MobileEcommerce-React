@@ -1,28 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Mada:wght@200;300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.linklist{
-     @apply hover:text-blue-600 pb-3
+.linklist {
+  @apply hover:text-purple-600 font-Mada text-lg  pb-3;
 }
 
-ul .active{
-     @apply text-blue-600 border-b-2 border-blue-600 border-separate
+ul .active {
+  @apply text-purple-600 border-b-2 font-bold border-purple-600 border-separate;
 }
 
-.max-w{
-     @apply max-w-[1700px] mx-auto
+.max-w {
+  @apply max-w-[1700px] mx-auto;
 }
 
-.bg-login{
-     background: url('/public/Images/login-bg.jpg') no-repeat center center/cover ;
-
+.w-padding {
+  @apply px-5 py-3 md:px-14 md:py-10;
 }
 
-.animation{
-     @apply transition-all duration-200 ease-linear
+.bg-login {
+  background: url("/public/Images/login-bg.jpg") no-repeat center center/cover;
 }
 
-.hero-gradient{
-     background: linear-gradient(180deg, #7D89FF 0%, #AB40FF 66.67%);
+.animation {
+  @apply transition-all duration-200 ease-linear;
+}
+
+.hero-gradient {
+  background: linear-gradient(180deg, #7d89ff 0%, #ab40ff 66.67%);
+}
+
+.btn {
+  @apply bg-white font-Poppins hover:bg-gray-200 px-10 text-purple-600 py-2 text-lg font-bold rounded-sm shadow-sm shadow-gray-400 hover:shadow-md animation;
+}
+
+.footer-main {
+  @apply text-base sm:text-lg font-bold cursor-default font-Poppins;
+}
+
+.footer-para {
+  @apply font-Poppins text-xs sm:text-sm hover:underline font-normal text-[#F4F4F4];
 }
