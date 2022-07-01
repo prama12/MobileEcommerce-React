@@ -41,13 +41,13 @@ const Login = () => {
                                              </label>
                                         </div>
                                         <div>
-                                             <a className="inline-block align-baseline  text-xs text-white hover:text-gray-100" href="#">
+                                             <a className="inline-block align-baseline text-xs text-white hover:text-gray-100" href="#">
                                                   Forgot Password?
                                              </a>
                                         </div>
                                    </div>
                                    <div className="flex items-center justify-end">
-                                        <button className='btn'><NavLink to="/myProfile">Login</NavLink></button>
+                                        <NavLink to="/myProfile"><button className='btn'>Login</button></NavLink>
                                    </div>
                               </div>
                          </div>
