@@ -33,10 +33,17 @@ ul .active {
 
 .hero-gradient {
   background: linear-gradient(180deg, #7d89ff 0%, #ab40ff 66.67%);
+  border-radius: 5px;
 }
 
 .btn {
-  @apply bg-white font-Poppins hover:bg-gray-200 px-10 text-purple-600 py-2 text-lg font-bold rounded-sm shadow-sm shadow-gray-400 hover:shadow-md animation;
+  @apply bg-white font-Poppins px-10 py-2 text-lg font-bold rounded-sm shadow-sm shadow-gray-400 hover:shadow-md animation;
+}
+
+.btn-withbg {
+  background: linear-gradient(180deg, #7d89ff 0%, #ab40ff 66.67%);
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.05);
+  @apply font-Poppins hover:bg-gray-200 px-16 text-white py-2 text-lg font-bold rounded-sm hover:shadow-md animation;
 }
 
 .footer-main {
@@ -45,4 +52,28 @@ ul .active {
 
 .footer-para {
   @apply font-Poppins text-xs sm:text-sm hover:underline font-normal text-[#F4F4F4];
+}
+
+.contact-form {
+  @apply w-full border border-[#969696] text-base xsm:text-lg font-Poppins text-[#969696] capitalize focus:border focus:border-purple-700 focus:outline-none focus:text-purple-700 focus:placeholder:text-purple-700  px-3 py-2 xsm:px-5 xsm:py-3 hover:outline-none;
+}
+
+.gradient-text {
+  background: linear-gradient(180deg, #7d89ff 0%, #ab40ff 66.67%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
 }

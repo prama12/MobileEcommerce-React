@@ -8,7 +8,7 @@ const Navbar = () => {
         <div className="w-full max-w flex items-center justify-between">
           <NavLink
             to="/"
-            className="flex gap-1 items-center text-base font-bold hover:text-black text-gray-600 cursor-pointer"
+            className="flex flex-wrap gap-1 items-center text-base font-bold hover:text-black text-gray-600 cursor-pointer"
           >
             <div>
               <img src="Images/Logo.png" alt="logo" />
@@ -99,7 +99,7 @@ const Navbar = () => {
                 </NavLink>
               </li>
             </ul>
-            <div className="font-sans text-black bg-white flex items-center justify-center">
+            <div className="font-sans text-black bg-white hidden lg:flex items-center justify-center">
               <div className="border rounded overflow-hidden flex">
                 <input
                   type="text"

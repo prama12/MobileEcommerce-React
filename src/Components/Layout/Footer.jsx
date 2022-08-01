@@ -24,7 +24,11 @@ const Footer = () => {
 
             <div>
               <NavLink to="/login">
-                <button className="btn">Login Now</button>
+                <button className="btn">
+                  <div className=" bg-white">
+                    <div className="gradient-text">Login</div>
+                  </div>
+                </button>
               </NavLink>
             </div>
           </div>

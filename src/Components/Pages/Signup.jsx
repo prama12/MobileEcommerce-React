@@ -117,7 +117,11 @@ const Signup = () => {
               </div>
               <div className="flex items-center justify-end">
                 <NavLink to="/login">
-                  <button className="btn">Sign Up</button>
+                  <button className="btn">
+                    <div className=" bg-white">
+                      <div className="gradient-text">Sign Up</div>
+                    </div>
+                  </button>
                 </NavLink>
               </div>
             </div>
