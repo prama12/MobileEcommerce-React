@@ -58,6 +58,18 @@ ul .active {
   @apply w-full border border-[#969696] text-base xsm:text-lg font-Poppins text-[#969696] capitalize focus:border focus:border-purple-700 focus:outline-none focus:text-purple-700 focus:placeholder:text-purple-700  px-3 py-2 xsm:px-5 xsm:py-3 hover:outline-none;
 }
 
+.edit-form {
+  @apply w-full border border-[#969696] text-base xsm:text-lg font-Poppins font-bold text-[#969696] capitalize focus:border focus:border-purple-700 focus:outline-none focus:text-purple-700 focus:placeholder:text-purple-700  px-3 py-2 xsm:px-5 xsm:py-3 hover:outline-none;
+}
+
+.edit-label{
+@apply font-Poppins text-lg font-bold text-[#0D1222]
+}
+
+.radio-label{
+  @apply font-Poppins font-bold text-sm text-[#0D1222]
+}
+
 .gradient-text {
   background: linear-gradient(180deg, #7d89ff 0%, #ab40ff 66.67%);
   -webkit-background-clip: text;

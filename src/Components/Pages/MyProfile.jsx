@@ -62,6 +62,100 @@ const MyProfile = () => {
           </div>
         </div>
       </div>
+
+      {/* edit form  */}
+      <div className=" w-full w-padding mb-20 max-w">
+        <div className=" xl:mt-10 mx-auto  ">
+          <form className="flex flex-col gap-5 xsm:gap-10">
+            <div className="grid xl:grid-cols-2 gap-5 xsm:gap-10 ">
+              <div className="flex flex-col gap-3">
+                <label className="edit-label">Name</label>
+                <input
+                  className="edit-form"
+                  type="text"
+                  name="name"
+                  placeholder="Alexanderdrostact12"
+                />
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-5 xsm:gap-10 ">
+              <div className="flex flex-col gap-3">
+                <label className="edit-label">Street</label>
+                <input
+                  className="edit-form"
+                  type="text"
+                  name="street"
+                  placeholder="jl.karadenan no 100"
+                />
+              </div>
+              <div className="flex flex-col gap-3">
+                <label className="edit-label">No. Phone</label>
+                <input
+                  className="edit-form"
+                  type="number"
+                  name="number"
+                  placeholder="1234 1234 1234 1234"
+                />
+              </div>
+            </div>
+            <div className="grid md:grid-cols-2 gap-5 xsm:gap-10 ">
+              <div className="flex flex-col gap-3">
+                <label className="edit-label">Address</label>
+                <textarea
+                  className="edit-form h-32 no-scrollbar "
+                  name="address"
+                  placeholder="Perum Mulya Sari, Jl. Candi Mendut No.36, RT 011/RW 005 (Belakang Polsek Lowokwaru), Kel. Mojolangu, Kec. Lowokwaru, Kota Malang, Jawa Timur, 65142"
+                />
+              </div>
+              <div className="flex flex-col gap-3">
+                <label className="edit-label">Gender</label>
+                <div className="flex items-center gap-5">
+                  <div class="form-check">
+                    <input
+                      className="form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-purple-600 checked:border-purple-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault1"
+                    />
+                    <label class="radio-label" for="flexRadioDefault1">
+                      Male
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input
+                      className="form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-purple-600 checked:border-purple-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault1"
+                    />
+                    <label class="radio-label" for="flexRadioDefault1">
+                      Female
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      className="form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-purple-600 checked:border-purple-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault1"
+                    />
+                    <label class="radio-label" for="flexRadioDefault1">
+                      Other
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className=" flex items-center mt-5 ">
+              <div className=" w-fit">
+                <button className="btn-withbg">Update</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
     </>
   );
 };
