@@ -26,6 +26,9 @@ const Wishlist = () => {
       {/* content */}
       <div className="w-padding max-w px-10 py-10">
         <div className="md:w-11/12 w-full mx-auto ">
+          <div className=" font-Poppins font-bold text-3xl text-[#0D1222] mb-10">
+            Products
+          </div>
           <table className="w-full  ">
             {Pdata.map((val, index) => {
               console.log(index);

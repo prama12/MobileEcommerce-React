@@ -4,7 +4,7 @@ const TableRowWishlist = ({ img, name, color, price, stock }) => {
   return (
     <>
       <tr className="relative flex flex-wrap gap-5 md:gap-10 xl:gap-16 justify-center items-center bg-[#F4F4F4] px-6 py-5 w-full mb-5">
-        <td className=" md:relative absolute top-1 right-1 xsm:top-2 xsm:right-2 sm:top-4 sm:right-4 md:top-0 md:right-0  text-xl hover:text-red-700 ">
+        <td className=" md:relative absolute top-1 right-1 xsm:top-2 xsm:right-2 sm:top-4 sm:right-4 md:top-0 md:right-0  text-xl hover:text-red-700 cursor-pointer ">
           <svg
             className="w-4 md:w-6"
             xmlns="http://www.w3.org/2000/svg"

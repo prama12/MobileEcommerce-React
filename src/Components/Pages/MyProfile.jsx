@@ -64,7 +64,7 @@ const MyProfile = () => {
       </div>
 
       {/* edit form  */}
-      <div className=" w-full w-padding mb-20 max-w">
+      <div className=" w-full px-5 pb-3 md:px-14 md:pb-10 mb-20 max-w">
         <div className=" xl:mt-10 mx-auto  ">
           <form className="flex flex-col gap-5 xsm:gap-10">
             <div className="grid xl:grid-cols-2 gap-5 xsm:gap-10 ">
