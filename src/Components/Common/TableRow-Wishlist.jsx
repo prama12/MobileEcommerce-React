@@ -20,7 +20,7 @@ const TableRowWishlist = ({ img, name, color, price, stock }) => {
           </svg>
         </td>
         <td className="w-20 h-20 bg-white hover:shadow-sm cursor-pointer overflow-hidden">
-          <img className="w-full h-full" src={img} />
+          <img className="w-full h-full" src={img} alt="" />
         </td>
         <td className="flex flex-shrink-0 flex-col text-center xsm:text-left  xsm:gap-2 ">
           <div className=" font-Mada font-bold text-xl sm:text-2xl text-[#0D1222]">

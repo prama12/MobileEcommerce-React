@@ -20,7 +20,11 @@ const MyProfile = () => {
               </div>
               <div className="flex xl:hidden xl:absolute bottom-0 right-20 justify-center rounded-sm shadow-md w-full  xl:w-[486px] xl:h-[407px] bg-white mx-auto py-5 flex-col items-center gap-5">
                 <div className=" rounded-full w-[150px] h-[150px] overflow-hidden ">
-                  <img className="h-full w-full" src="Images/profile.png" />
+                  <img
+                    className="h-full w-full"
+                    src="Images/profile.png"
+                    alt=""
+                  />
                 </div>
                 <div className=" font-Poppins font-bold text-xl sm:text-2xl text-[#0D1222]">
                   Alexanderdrostact12
@@ -48,7 +52,7 @@ const MyProfile = () => {
           </svg>
           <div className="hidden xl:flex xl:absolute -bottom-32 rounded-sm shadow-md right-20 justify-center w-[486px] h-[407px] bg-white mx-auto py-5 flex-col items-center gap-5 max-w">
             <div className=" rounded-full w-[150px] h-[150px] overflow-hidden ">
-              <img className="h-full w-full" src="Images/profile.png" />
+              <img className="h-full w-full" src="Images/profile.png" alt="" />
             </div>
             <div className=" font-Poppins font-bold text-xl sm:text-2xl text-[#0D1222]">
               Alexanderdrostact12

@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import Card from "../Common/Card";
+import Item from "../Products/CardItem";
 
 const Home = () => {
   return (
@@ -35,13 +36,13 @@ const Home = () => {
                     </div>
                     <div className="flex flex-col gap-10 h-60 overflow-y-scroll no-scrollbar pt-14">
                       <div>
-                        <img src="Images/about1.png" />
+                        <img src="Images/about1.png" alt="" />
                       </div>
                       <div>
-                        <img src="Images/about1.png" />
+                        <img src="Images/about1.png" alt="" />
                       </div>
                       <div>
-                        <img src="Images/about1.png" />
+                        <img src="Images/about1.png" alt="" />
                       </div>
                     </div>
                   </div>
@@ -61,10 +62,10 @@ const Home = () => {
       <div className="w-padding max-w">
         {/* cards  */}
         <div className="grid grid-cols-1 xsm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 my-5">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          {Item.map((val, index) => {
+            console.log(index);
+            return <Card key={val.id} {...val} />;
+          })}
         </div>
       </div>
     </>

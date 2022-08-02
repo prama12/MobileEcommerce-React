@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
-const Card = () => {
+const Card = ({ img, name, dec, price }) => {
   const [show, setShow] = useState(false);
   const [active, setActive] = useState(false);
   const [active1, setActive1] = useState(false);
@@ -14,7 +14,7 @@ const Card = () => {
       >
         <div className=" relative cursor-pointer">
           <NavLink to="/home/itemDetails">
-            <img className="w-full" src="Images/t-shirt.png" alt="" />
+            <img className="w-full" src={img} alt="" />
           </NavLink>
 
           {/* show on hover  */}
@@ -62,15 +62,13 @@ const Card = () => {
         <div className="px-5 py-5 flex flex-col gap-2">
           <div className="flex justify-between items-center">
             <div className=" text-[#0D1222] font-bold text-sm font-Poppins ">
-              Smart T-Shirt
+              {name}
             </div>
             <div className=" text-[#0D1222] font-bold text-lg font-Signika">
-              40$
+              {price}
             </div>
           </div>
-          <div className="text-sm font-Poppins text-[#969696]">
-            Best quality
-          </div>
+          <div className="text-sm font-Poppins text-[#969696]">{dec}</div>
           <div className="flex items-center gap-2">
             <ul class="flex items-center">
               <li>
