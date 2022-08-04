@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "./Layout/Footer";
 import Navbar from "./Layout/Navbar";
 import AboutUs from "./Pages/AboutUs";
-import Checkout from "./Pages/Checkout";
+import Cart from "./Pages/Cart";
 import Contact from "./Pages/Contact";
 import Home from "./Pages/Home";
 import MyProfile from "./Pages/MyProfile";
@@ -23,7 +23,7 @@ const Routing = () => {
           <Route path="/shop" element={<Shop />} />
           <Route path="/aboutUs" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/addtocart" element={<Checkout />} />
+          <Route path="/addtocart" element={<Cart />} />
           <Route path="/wishlist" element={<Wishlist />} />
           <Route path="/myProfile" element={<MyProfile />} />
           <Route path="/login" element={<Login />} />
