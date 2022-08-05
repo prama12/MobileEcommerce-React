@@ -40,7 +40,7 @@ const Navbar = () => {
             </ul>
             <ul className="flex items-center gap-4">
               <li>
-                <NavLink to="/addtocard" className="linklist">
+                <NavLink to="/addtocart" className="linklist">
                   <svg
                     className="w-5"
                     xmlns="http://www.w3.org/2000/svg"
