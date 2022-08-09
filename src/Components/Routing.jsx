@@ -11,7 +11,7 @@ import Shop from "./Pages/Shop";
 import Wishlist from "./Pages/Wishlist";
 import Login from "./Pages/Login";
 import Signup from "./Pages/Signup";
-import ItemDetails from "./Common/ItemDetails";
+import Item from "./Common/Item";
 
 const Routing = () => {
   return (
@@ -28,7 +28,7 @@ const Routing = () => {
           <Route path="/myProfile" element={<MyProfile />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
-          <Route path="/home/itemDetails" element={<ItemDetails />} />
+          <Route path="/home/itemDetails" element={<Item />} />
         </Routes>
         <Footer />
       </Router>

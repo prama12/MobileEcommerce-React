@@ -1,19 +1,18 @@
 import React from "react";
 
-const ItemDetails = () => {
+const Item = () => {
   return (
     <>
       <div className="w-full w-padding mx-auto max-w ">
         <div className="w-full grid grid-cols-2 gap-5">
           <div className="w-full flex flex-col gap-3 ">
-            <div className="">
-              <img src="Images/item1.png" alt="1" />
+            <div className="w-full bg-slate-200">
+              <img src="/Images/item1.png" alt="1" />
             </div>
-            <div className=" flex gap-3">
-              <img src="Images/google.png" alt="1" />
-              <img className="w-40" src="Images/item3.png" alt="2" />
-              <img src="Images/item4.png" alt="3" />
-              <img src="Images/item1.png " alt="prama" />
+            <div className=" w-full grid grid-cols-3 gap-3">
+              <img src="/Images/item2.png" alt="1" />
+              <img className="w-40" src="/Images/item3.png" alt="2" />
+              <img src="/Images/item4.png" alt="3" />
             </div>
           </div>
 
@@ -92,6 +91,10 @@ const ItemDetails = () => {
                 <div className="ml-2 text-sm font-mada">(2k)</div>
               </div>
 
+              <div className=" mt-2 text-[#0D1222] flex flex-col gap-3">
+                <div className=" ">Quantity</div>
+              </div>
+
               <div></div>
             </div>
           </div>
@@ -101,4 +104,4 @@ const ItemDetails = () => {
   );
 };
 
-export default ItemDetails;
+export default Item;
