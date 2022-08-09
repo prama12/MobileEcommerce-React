@@ -25,11 +25,11 @@ const Cart = () => {
 
       {/* content */}
       <div className="w-padding max-w px-10 py-10">
-        <div className="md:w-11/12 w-full mx-auto ">
+        <div className="xl:w-11/12 w-full mx-auto ">
           <div className=" font-Poppins font-bold text-3xl text-[#0D1222] mb-10">
             Cart Products
           </div>
-          <div className="w-full md:grid grid-cols-12 gap-10">
+          <div className="w-full lg:grid grid-cols-12 gap-10">
             <div className="w-full col-span-8">
               <table className="w-full  ">
                 {Pdata.map((val, index) => {
@@ -62,7 +62,7 @@ const Cart = () => {
                       4 Product
                     </div>
                   </div>
-                  <div className="text-[#0D1222]  sm:text-lg  font-Mada">
+                  <div className="text-[#0D1222] sm:text-lg  font-Mada">
                     $ 160 USD
                   </div>
                 </div>
