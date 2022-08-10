@@ -46,6 +46,11 @@ ul .active {
   @apply font-Poppins hover:bg-gray-200 px-10 text-white py-2 sm:text-lg font-bold rounded-sm hover:shadow-md animation;
 }
 
+.bg-gradient {
+  background: linear-gradient(180deg, #7d89ff 0%, #ab40ff 66.67%);
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.05);
+}
+
 .footer-main {
   @apply text-base sm:text-lg font-bold cursor-default font-Poppins;
 }
