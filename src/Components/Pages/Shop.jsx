@@ -11,11 +11,6 @@ const Shop = () => {
               <div className=" font-Mada font-bold text-white text-4xl">
                 Cart
               </div>
-              <div className=" font-Poppins text-[#F4F4F4] text-lg">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget
-                gravida leo, nec iaculis diam. Nam bibendum mi sed sem finibus
-                ullamcorper.
-              </div>
             </div>
           </div>
         </div>

@@ -12,11 +12,13 @@ import Wishlist from "./Pages/Wishlist";
 import Login from "./Pages/Login";
 import Signup from "./Pages/Signup";
 import Item from "./Common/Item";
+import ScrollToTop from "./scrollToTop/ScrollToTop";
 
 const Routing = () => {
   return (
     <>
       <Router>
+        <ScrollToTop />
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
