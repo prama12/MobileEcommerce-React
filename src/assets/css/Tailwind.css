@@ -98,3 +98,15 @@ ul .active {
     scrollbar-width: none; /* Firefox */
   }
 }
+
+.category {
+  @apply w-20 h-20 cursor-pointer overflow-hidden flex justify-center items-center rounded-full bg-white;
+}
+
+.category1 {
+  @apply w-full flex flex-col gap-2 justify-end items-center;
+}
+
+.category-text {
+  @apply text-white text-lg font-Poppins;
+}
