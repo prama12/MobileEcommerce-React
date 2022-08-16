@@ -1,6 +1,8 @@
 import React from "react";
+import Card from "../Common/Card";
 import CategoryItem from "../Common/CategoryItem";
 import Category from "../Products/CategoryItemDetails";
+import Pdata from "../Products/Pdata"
 
 const Shop = () => {
   return (
@@ -73,8 +75,14 @@ const Shop = () => {
           T-shirt
         </div>
         <div className="w-full grid grid-cols-12 gap-0.5 bg-white  py-2">
-          <div className="col-span-4 bg-red-500 px-10 py-14"></div>
-          <div className="col-span-8 bg-green-800 px-10 py-14"></div>
+          <div className="col-span-3 bg-red-500 px-10 py-14"></div>
+          <div className="col-span-9 grid grid-cols-3 gap-4 px-10 py-14">
+           {
+             Pdata.map((val,index)=>{
+               return <Card key={val.id} {...val} />
+             })
+           }
+          </div>
         </div>
       </div>
     </>

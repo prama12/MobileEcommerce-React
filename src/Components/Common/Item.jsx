@@ -1,5 +1,5 @@
 import React from "react";
-import Item1 from "../Products/SameProduct";
+import Pdata from "../Products/Pdata";
 import Card from "../Common/Card";
 
 const Item = () => {
@@ -185,7 +185,7 @@ const Item = () => {
             Same Product
           </div>
           <div className="grid grid-cols-1 xsm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 my-5">
-            {Item1.map((val, index) => {
+            {Pdata.map((val, index) => {
               console.log(index);
               return <Card key={val.id} {...val} />;
             })}
