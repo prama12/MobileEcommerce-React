@@ -69,7 +69,10 @@ const Shop = () => {
       {/* shop content  */}
 
       <div className="w-full w-padding max-w">
-        <div className="w-full grid grid-cols-12 gap-0.5 bg-white px-5 py-2">
+        <div className="text-2xl font-Mada text-black pb-5 font-bold">
+          T-shirt
+        </div>
+        <div className="w-full grid grid-cols-12 gap-0.5 bg-white  py-2">
           <div className="col-span-4 bg-red-500 px-10 py-14"></div>
           <div className="col-span-8 bg-green-800 px-10 py-14"></div>
         </div>
