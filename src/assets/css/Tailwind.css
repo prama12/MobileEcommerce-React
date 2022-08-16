@@ -108,5 +108,5 @@ ul .active {
 }
 
 .category-text {
-  @apply text-white text-lg font-Poppins;
+  @apply text-white text-xs sm:text-sm font-Poppins;
 }
