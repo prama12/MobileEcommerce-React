@@ -10,7 +10,7 @@ const Card = ({ img, name, dec, price }) => {
       <div
         onMouseEnter={() => setShow(!show)}
         onMouseLeave={() => setShow(!show)}
-        className="w-full h-fit overflow-hidden shadow-xl cursor-default hover:shadow-2xl rounded-lg relative animation"
+        className="w-full h-fit overflow-hidden shadow-xl cursor-default hover:shadow-2xl rounded-lg relative animation animation"
       >
         <div className=" relative cursor-pointer">
           <NavLink to="/home/itemDetails">
@@ -19,7 +19,7 @@ const Card = ({ img, name, dec, price }) => {
 
           {/* show on hover  */}
           {show ? (
-            <div className=" w-full cursor-default px-4 py-3 bg-[#00000080] bottom-0 absolute  backdrop-blur-sm flex gap-4 items-center justify-end">
+            <div className=" w-full cursor-default px-4 py-3 bg-[#00000080] bottom-0 absolute  backdrop-blur-sm flex gap-4 items-center justify-end animation  ">
               <div className=" border border-white w-9 h-9 flex items-center justify-center  p-1">
                 <svg
                   onClick={() => setActive(!active)}
@@ -70,14 +70,14 @@ const Card = ({ img, name, dec, price }) => {
           </div>
           <div className="text-sm font-Poppins text-[#969696]">{dec}</div>
           <div className="flex items-center gap-2">
-            <ul class="flex items-center">
+            <ul className="flex items-center">
               <li>
                 <svg
-                  aria-hidden="true"
+                  ariaHidden="true"
                   focusable="false"
-                  data-prefix="fas"
-                  data-icon="star"
-                  class="w-4 text-yellow-500 mr-1"
+                  dataPrefix="fas"
+                  dataIcon="star"
+                  className="w-4 text-yellow-500 mr-1"
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
@@ -90,11 +90,11 @@ const Card = ({ img, name, dec, price }) => {
               </li>
               <li>
                 <svg
-                  aria-hidden="true"
+                  ariaHidden="true"
                   focusable="false"
-                  data-prefix="fas"
-                  data-icon="star"
-                  class="w-4 text-yellow-500 mr-1"
+                  dataPrefix="fas"
+                  dataIcon="star"
+                  className="w-4 text-yellow-500 mr-1"
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
@@ -107,11 +107,11 @@ const Card = ({ img, name, dec, price }) => {
               </li>
               <li>
                 <svg
-                  aria-hidden="true"
+                  ariaHidden="true"
                   focusable="false"
-                  data-prefix="fas"
-                  data-icon="star"
-                  class="w-4 text-yellow-500 mr-1"
+                  dataPrefix="fas"
+                  dataIcon="star"
+                  className="w-4 text-yellow-500 mr-1"
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
@@ -124,11 +124,11 @@ const Card = ({ img, name, dec, price }) => {
               </li>
               <li>
                 <svg
-                  aria-hidden="true"
+                  ariaHidden="true"
                   focusable="false"
-                  data-prefix="far"
-                  data-icon="star"
-                  class="w-4 text-yellow-500 mr-1"
+                  dataPrefix="far"
+                  dataIcon="star"
+                  className="w-4 text-yellow-500 mr-1"
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
@@ -141,11 +141,11 @@ const Card = ({ img, name, dec, price }) => {
               </li>
               <li>
                 <svg
-                  aria-hidden="true"
+                  ariaHidden="true"
                   focusable="false"
-                  data-prefix="far"
-                  data-icon="star"
-                  class="w-4 text-yellow-500"
+                  dataPrefix="far"
+                  dataIcon="star"
+                  className="w-4 text-yellow-500 mr-1"
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
