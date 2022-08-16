@@ -2,7 +2,7 @@ import React from "react";
 import Card from "../Common/Card";
 import CategoryItem from "../Common/CategoryItem";
 import Category from "../Products/CategoryItemDetails";
-import Pdata from "../Products/Pdata"
+import Pdata from "../Products/Pdata";
 
 const Shop = () => {
   return (
@@ -74,14 +74,12 @@ const Shop = () => {
         <div className="text-2xl font-Mada text-black pb-5 font-bold">
           T-shirt
         </div>
-        <div className="w-full grid grid-cols-12 gap-0.5 bg-white  py-2">
+        <div className="w-full md:grid grid-cols-12 gap-0.5 bg-white  py-2">
           <div className="col-span-3 bg-red-500 px-10 py-14"></div>
-          <div className="col-span-9 grid grid-cols-3 gap-4 px-10 py-14">
-           {
-             Pdata.map((val,index)=>{
-               return <Card key={val.id} {...val} />
-             })
-           }
+          <div className="col-span-9 grid xsm:grid-cols-2  lg:grid-cols-3 gap-4 px-5  xl:px-10">
+            {Pdata.map((val, index) => {
+              return <Card key={val.id} {...val} />;
+            })}
           </div>
         </div>
       </div>
