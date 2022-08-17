@@ -1,6 +1,7 @@
 import { React, useState } from "react";
 import { NavLink } from "react-router-dom";
 import Card from "../Common/Card";
+import Testimonials from "../Common/Testimonials";
 import Item from "../Products/CardItem";
 
 const Home = () => {
@@ -63,17 +64,16 @@ const Home = () => {
           </div>
         </div>
       </div>
-
       {/* home contain  */}
       <div className="w-padding max-w">
-        <div className="w-full flex justify-center items-center flex-col gap-5">
+        <div className="w-full flex justify-center items-center flex-col gap-5 py-10">
           <div className=" font-Poppins text-lg text-center text-[#5463FF] ">
             CHOOSE FROM THE BEST PRODUCTS
           </div>
           <div className="w-full text-[#0D1222] text-5xl font-Mada font-bold text-center ">
             Our Best Seller Product
           </div>
-          <div className="w-full flex justify-center items-center gap-10 pb-10">
+          <div className="w-full flex justify-center items-center gap-10 ">
             <div
               className={tab === 1 ? "active-tabs" : "tab"}
               onClick={() => tabToggle(1)}
@@ -106,6 +106,21 @@ const Home = () => {
             console.log(index);
             return <Card key={val.id} {...val} />;
           })}
+        </div>
+      </div>
+
+      <div className="hero-gradient w-full h-fit">
+        <div className="w-full max-w w-padding"></div>
+      </div>
+
+      {/* Testimonials  */}
+      <div className="w-full relative w-padding max-w flex flex-col gap-10 ">
+        <div className="text-center font-Mada font-bold text-[40px] text-[#0D1222]">
+          Testimonials
+        </div>
+        <div className=" w-full grid grid-cols-2 gap-10 ">
+          <Testimonials />
+          <Testimonials />
         </div>
       </div>
     </>
