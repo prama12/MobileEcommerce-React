@@ -10,7 +10,7 @@ const Card = ({ img, name, dec, price }) => {
       <div
         onMouseEnter={() => setShow(!show)}
         onMouseLeave={() => setShow(!show)}
-        className="w-full h-fit overflow-hidden shadow-xl cursor-default hover:shadow-2xl rounded-lg relative animation animation"
+        className="w-full h-fit overflow-hidden shadow-xl cursor-default hover:shadow-2xl rounded-lg relative transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:transform-none "
       >
         <div className=" relative cursor-pointer">
           <NavLink to="/home/itemDetails">

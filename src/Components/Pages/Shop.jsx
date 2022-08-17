@@ -75,11 +75,32 @@ const Shop = () => {
           T-shirt
         </div>
         <div className="w-full md:grid grid-cols-12 gap-0.5 bg-white  py-2">
-          <div className="col-span-3 bg-red-500 px-10 py-14"></div>
-          <div className="col-span-9 grid xsm:grid-cols-2  lg:grid-cols-3 gap-4 px-5  xl:px-10">
-            {Pdata.map((val, index) => {
-              return <Card key={val.id} {...val} />;
-            })}
+          <div className="col-span-3 px-5"></div>
+          <div className="col-span-9 flex flex-col gap-10 justify-center items-center w-full  ">
+            <div className="grid xsm:grid-cols-2 lg:grid-cols-3 gap-4 px-5 xl:px-10">
+              {Pdata.map((val, index) => {
+                return <Card key={val.id} {...val} />;
+              })}
+            </div>
+
+            <div>
+              <button className="btn-withbg">Load More</button>
+            </div>
+          </div>
+        </div>
+
+        {/* recomonded cards  */}
+
+        <div className=" w-full flex flex-col my-20 gap-10 items-center justify-center ">
+          <div className=" text-center text-[40px] font-Mada font-medium">
+            Recommend Product
+          </div>
+          <div className="w-full overflow-hidden flex justify-center items-center">
+            <div className=" w-11/12 grid grid-cols-12 overflow-x-scroll gap-10 ">
+              {Pdata.map((val, index) => {
+                return <Card key={val.id} {...val} />;
+              })}
+            </div>
           </div>
         </div>
       </div>
