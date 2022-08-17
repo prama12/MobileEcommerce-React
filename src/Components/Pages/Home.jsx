@@ -1,9 +1,15 @@
-import React from "react";
+import { React, useState } from "react";
 import { NavLink } from "react-router-dom";
 import Card from "../Common/Card";
 import Item from "../Products/CardItem";
 
 const Home = () => {
+  const [tab, setTab] = useState(1);
+
+  const tabToggle = (index) => {
+    setTab(index);
+  };
+
   return (
     <>
       {/* hero section  */}
@@ -60,6 +66,40 @@ const Home = () => {
 
       {/* home contain  */}
       <div className="w-padding max-w">
+        <div className="w-full flex justify-center items-center flex-col gap-5">
+          <div className=" font-Poppins text-lg text-center text-[#5463FF] ">
+            CHOOSE FROM THE BEST PRODUCTS
+          </div>
+          <div className="w-full text-[#0D1222] text-5xl font-Mada font-bold text-center ">
+            Our Best Seller Product
+          </div>
+          <div className="w-full flex justify-center items-center gap-10 pb-10">
+            <div
+              className={tab === 1 ? "active-tabs" : "tab"}
+              onClick={() => tabToggle(1)}
+            >
+              Mobile
+            </div>
+            <div
+              className={tab === 2 ? "active-tabs" : "tab"}
+              onClick={() => tabToggle(2)}
+            >
+              Headphone
+            </div>
+            <div
+              className={tab === 3 ? "active-tabs" : "tab"}
+              onClick={() => tabToggle(3)}
+            >
+              EarPhone
+            </div>
+            <div
+              className={tab === 4 ? "active-tabs" : "tab"}
+              onClick={() => tabToggle(4)}
+            >
+              Charger
+            </div>
+          </div>
+        </div>
         {/* cards  */}
         <div className="grid grid-cols-1 xsm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 my-5">
           {Item.map((val, index) => {

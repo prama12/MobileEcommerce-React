@@ -75,7 +75,9 @@ const Shop = () => {
           T-shirt
         </div>
         <div className="w-full md:grid grid-cols-12 gap-0.5 bg-white  py-2">
-          <div className="col-span-3 px-5"></div>
+          <div className="col-span-3 px-5">
+            <h1 className="font-semibold text-lg">filter</h1>
+          </div>
           <div className="col-span-9 flex flex-col gap-10 justify-center items-center w-full  ">
             <div className="grid xsm:grid-cols-2 lg:grid-cols-3 gap-4 px-5 xl:px-10">
               {Pdata.map((val, index) => {
