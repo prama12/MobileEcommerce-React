@@ -1,11 +1,17 @@
-import React from "react";
+import { React, useState } from "react";
 import { NavLink } from "react-router-dom";
+import SideNav from "./SideNav";
 
 const Navbar = () => {
+  const [click, setClick] = useState(false);
+
+  const handleClick = () => setClick(!click);
+  const Close = () => setClick(false);
+
   return (
     <>
-      <nav className="w-full bg-white border-b border-gray-50 px-5 md:px-16 py-5 shadow-sm sticky top-0 z-50 ">
-        <div className="w-full max-w flex items-center justify-between">
+      <nav className=" w-full bg-white border-b border-gray-50 px-5 md:px-16 py-5 shadow-sm sticky top-0 z-50 ">
+        <div className="relative w-full max-w flex items-center justify-between">
           <NavLink
             to="/"
             className="flex flex-wrap gap-1 items-center text-base font-bold hover:text-black text-gray-600 cursor-pointer"
@@ -68,6 +74,7 @@ const Navbar = () => {
                 </NavLink>
               </li>
             </ul>
+
             <ul className="flex items-center gap-4">
               <li>
                 <NavLink to="/addtocart" className="linklist">
@@ -129,6 +136,32 @@ const Navbar = () => {
                 </NavLink>
               </li>
             </ul>
+
+            <ul className=" flex lg:hidden">
+              <li onClick={handleClick} className="cursor-pointer">
+                <svg
+                  className="w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M2.75 12.25h10.5m-10.5-4h10.5m-10.5-4h10.5"
+                  />
+                </svg>
+              </li>
+            </ul>
+
+            {click ? (
+              <div className=" absolute top-0 left-0">
+                <SideNav />
+              </div>
+            ) : null}
             <div className="font-sans text-black bg-white hidden lg:flex items-center justify-center">
               <div className="border rounded overflow-hidden flex">
                 <input
