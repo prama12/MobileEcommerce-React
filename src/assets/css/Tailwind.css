@@ -112,9 +112,9 @@ ul .active {
 }
 
 .tab {
-  @apply font-Mada text-[#646464] hover:text-[#5463FF] text-lg animation;
+  @apply font-Mada text-[#646464] hover:text-[#5463FF] text-lg animation cursor-pointer;
 }
 
 .active-tabs {
-  @apply font-Mada font-bold text-lg  text-[#5463FF] border-b-2 border-[#5463FF];
+  @apply font-Mada font-bold text-lg  text-[#5463FF] border-b-2 border-[#5463FF] cursor-pointer;
 }

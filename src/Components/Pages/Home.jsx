@@ -1,6 +1,7 @@
 import { React, useState } from "react";
 import { NavLink } from "react-router-dom";
 import Card from "../Common/Card";
+import Rating from "../Common/Rating";
 import Testimonials from "../Common/Testimonials";
 import Item from "../Products/CardItem";
 
@@ -70,10 +71,10 @@ const Home = () => {
           <div className=" font-Poppins text-lg text-center text-[#5463FF] ">
             CHOOSE FROM THE BEST PRODUCTS
           </div>
-          <div className="w-full text-[#0D1222] text-5xl font-Mada font-bold text-center ">
+          <div className="w-full text-[#0D1222] text-3xl sm:text-4xl md:text-5xl font-Mada font-bold text-center ">
             Our Best Seller Product
           </div>
-          <div className="w-full flex justify-center items-center gap-10 ">
+          <div className="w-full flex flex-wrap justify-center items-center gap-y-3 gap-5 md:gap-10 ">
             <div
               className={tab === 1 ? "active-tabs" : "tab"}
               onClick={() => tabToggle(1)}
@@ -110,7 +111,88 @@ const Home = () => {
       </div>
 
       <div className="hero-gradient w-full h-fit">
-        <div className="w-full max-w w-padding"></div>
+        <div className="w-full max-w w-padding">
+          <div className="grid grid-cols-12 gap-10 w-full  ">
+            <div className=" relative flex col-span-7 w-full justify-end px-20 gap-20 ">
+              <div className=" absolute w-52 -left-5  ">
+                <img className="" src="/Images/cover.png" alt="" />
+                <div className="">
+                  <img src="/Images/elipes.png" alt="" />
+                </div>
+              </div>
+
+              <div className=" flex items-center justify-center">
+                <div className=" shadow hover:shadow-xl  flex justify-center items-center w-10 h-10 bg-white ">
+                  <svg
+                    width="12"
+                    height="21"
+                    viewBox="0 0 12 21"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.3442 1.99998L1.80024 10.544L10.3442 19.088"
+                      stroke="#5463FF"
+                      stroke-width="2.4"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div className="w-60 ">
+                  <img className="" src="/Images/cover.png" alt="" />
+                  <div className="">
+                    <img src="/Images/elipes.png" alt="" />
+                  </div>
+                </div>
+                <div className="shadow hover:shadow-xl  flex justify-center items-center w-10 h-10 bg-white ">
+                  <svg
+                    width="12"
+                    height="21"
+                    viewBox="0 0 12 21"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.65576 1.99998L10.1998 10.544L1.65576 19.088"
+                      stroke="#5463FF"
+                      stroke-width="2.4"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div className=" col-span-5 py-10 text-white flex flex-col gap-10 ">
+              <div className=" font-Mada text-5xl font-bold">
+                The Oblongers T-Shirt
+              </div>
+              <div className=" flex justify-between ">
+                <div className=" flex gap-2 items-center">
+                  <Rating />
+                  <div className=" font-Poppins text-sm text-[#DDDDDD] ">
+                    ( 20k )
+                  </div>
+                </div>
+                <div className=" font-Poppins text-[40px] font-bold">50$</div>
+              </div>
+
+              <div className="font-Poppins text-sm text-[#DDDDDD] ">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                mollis, justo nec porttitor auctor, erat sapien faucibus lectus,
+                vel tempor dolor augue et lectus. Proin et lacus blandit quam
+                semper placerat.
+              </div>
+
+              <div className=" bg-white flex w-fit rounded justify-start ">
+                <button className="btn gradient-text ">Order Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Testimonials  */}
@@ -118,9 +200,9 @@ const Home = () => {
         <div className="text-center font-Mada font-bold text-[40px] text-[#0D1222]">
           Testimonials
         </div>
-        <div className=" w-full grid grid-cols-2 gap-10 ">
-          <Testimonials />
-          <Testimonials />
+        <div className=" w-full grid sm:grid-cols-2 gap-10 ">
+          <Testimonials img="/Images/Profile.png" name="Bijay" />
+          <Testimonials img="/Images/Profile2.png" name="Prama" />
         </div>
       </div>
     </>
