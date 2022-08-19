@@ -4,13 +4,11 @@ import SideNav from "./SideNav";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
-
   const handleClick = () => setClick(!click);
   const Close = () => setClick(false);
-
   return (
     <>
-      <nav className=" w-full bg-white border-b border-gray-50 px-5 md:px-16 py-5 shadow-sm sticky top-0 z-50 ">
+      <nav className={click ? "side-Nav" : "main-Nav"}>
         <div className="relative w-full max-w flex items-center justify-between">
           <NavLink
             to="/"
@@ -77,7 +75,7 @@ const Navbar = () => {
 
             <ul className="flex items-center gap-4">
               <li>
-                <NavLink to="/addtocart" className="linklist">
+                <NavLink onClick={Close} to="/addtocart" className="linklist">
                   <svg
                     className="w-5"
                     xmlns="http://www.w3.org/2000/svg"
@@ -98,7 +96,7 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/wishlist" className="linklist">
+                <NavLink onClick={Close} to="/wishlist" className="linklist">
                   <svg
                     className="w-5"
                     xmlns="http://www.w3.org/2000/svg"
@@ -119,7 +117,7 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/myProfile" className="linklist">
+                <NavLink onClick={Close} to="/myProfile" className="linklist">
                   <svg
                     className="w-5"
                     xmlns="http://www.w3.org/2000/svg"
@@ -138,30 +136,41 @@ const Navbar = () => {
             </ul>
 
             <ul className=" flex lg:hidden">
-              <li onClick={handleClick} className="cursor-pointer">
-                <svg
-                  className="w-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  preserveAspectRatio="xMidYMid meet"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1.5"
-                    d="M2.75 12.25h10.5m-10.5-4h10.5m-10.5-4h10.5"
-                  />
-                </svg>
-              </li>
+              {click ? (
+                <li onClick={Close} className="cursor-pointer">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-5"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 64 64"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M62 10.571L53.429 2L32 23.429L10.571 2L2 10.571L23.429 32L2 53.429L10.571 62L32 40.571L53.429 62L62 53.429L40.571 32z"
+                    />
+                  </svg>
+                </li>
+              ) : (
+                <li onClick={handleClick} className="cursor-pointer">
+                  <svg
+                    className="w-6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                      d="M2.75 12.25h10.5m-10.5-4h10.5m-10.5-4h10.5"
+                    />
+                  </svg>
+                </li>
+              )}
             </ul>
 
-            {click ? (
-              <div className=" absolute top-0 left-0">
-                <SideNav />
-              </div>
-            ) : null}
             <div className="font-sans text-black bg-white hidden lg:flex items-center justify-center">
               <div className="border rounded overflow-hidden flex">
                 <input
@@ -184,6 +193,13 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
+      <div className="w-full">
+        {click ? (
+          <div className="w-full h-screen">
+            <SideNav closeNav={Close} />
+          </div>
+        ) : null}
+      </div>
     </>
   );
 };

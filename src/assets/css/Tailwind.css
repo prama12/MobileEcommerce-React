@@ -7,12 +7,24 @@
 @tailwind components;
 @tailwind utilities;
 
+.main-Nav {
+  @apply w-full bg-white border-b border-gray-50 px-5 md:px-16 py-5 shadow-sm sticky top-0 z-50;
+}
+
+.side-Nav {
+  @apply w-full bg-white px-5 md:px-16 py-5;
+}
+
 .linklist {
-  @apply hover:text-purple-600 font-Mada text-lg  pb-3;
+  @apply hover:text-purple-600 font-medium  font-Mada text-lg  pb-3;
 }
 
 ul .active {
   @apply text-purple-600 border-b-2 font-bold border-purple-600 border-separate;
+}
+
+.navLink {
+  @apply font-Mada w-full  text-lg font-medium animation bg-red-100   hover:text-purple-600;
 }
 
 .max-w {
