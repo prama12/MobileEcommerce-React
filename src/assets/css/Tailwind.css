@@ -20,11 +20,11 @@
 }
 
 ul .active {
-  @apply text-purple-600 border-b-2 font-bold border-purple-600 border-separate;
+  @apply text-purple-600   lg:border-b-2 font-bold  lg:border-purple-600 border-separate;
 }
 
 .navLink {
-  @apply font-Mada w-full  text-lg font-medium animation bg-red-100   hover:text-purple-600;
+  @apply font-Mada py-3 px-2 bg-gray-50 w-11/12 text-lg font-medium animation  hover:text-purple-600;
 }
 
 .max-w {

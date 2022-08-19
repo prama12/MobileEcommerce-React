@@ -1,6 +1,6 @@
 import { React, useState } from "react";
 import { NavLink } from "react-router-dom";
-import SideNav from "./SideNav";
+import Navlinkdata from "./SideNav";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -9,7 +9,13 @@ const Navbar = () => {
   return (
     <>
       <nav className={click ? "side-Nav" : "main-Nav"}>
-        <div className="relative w-full max-w flex items-center justify-between">
+        <div
+          className={
+            click
+              ? "relative w-full max-w flex flex-col gap-10"
+              : "relative w-full max-w flex items-center justify-between"
+          }
+        >
           <NavLink
             to="/"
             className="flex flex-wrap gap-1 items-center text-base font-bold hover:text-black text-gray-600 cursor-pointer"
@@ -49,31 +55,29 @@ const Navbar = () => {
             </div>
             <div className=" font-Roboto">Online Mobile Store</div>
           </NavLink>
-          <div className="flex gap-6 items-center text-xs font-semibold">
-            <ul className="hidden lg:flex items-center gap-6 text-gray-800 ">
-              <li>
-                <NavLink className="linklist" to="/">
-                  Home
-                </NavLink>
-              </li>
-              <li>
-                <NavLink className="linklist" to="/shop">
-                  Shop
-                </NavLink>
-              </li>
-              <li>
-                <NavLink className="linklist" to="/aboutUs">
-                  About Us
-                </NavLink>
-              </li>
-              <li>
-                <NavLink className="linklist" to="/contact">
-                  Contact
-                </NavLink>
-              </li>
-            </ul>
 
-            <ul className="flex items-center gap-4">
+          <div
+            className={
+              click
+                ? "flex flex-col gap-6 items-center text-xs font-semibold"
+                : " flex  gap-6 items-center text-xs font-semibold"
+            }
+          >
+            <ul
+              className={
+                click
+                  ? "px-5 w-full flex flex-col gap-5 divide-y bg-white"
+                  : " hidden lg:flex items-center justify-center gap-6  text-gray-800"
+              }
+            >
+              {Navlinkdata.map((item, index) => {
+                return (
+                  <li onClick={Close} key={index} className={item.cName}>
+                    <NavLink to={item.path}>{item.title}</NavLink>
+                  </li>
+                );
+              })}
+
               <li>
                 <NavLink onClick={Close} to="/addtocart" className="linklist">
                   <svg
@@ -135,7 +139,42 @@ const Navbar = () => {
               </li>
             </ul>
 
-            <ul className=" flex lg:hidden">
+            {/* search item  */}
+            <div
+              className={
+                click
+                  ? "font-sans flex md:hidden text-black bg-white w-full  "
+                  : "font-sans hidden md:flex text-black bg-white  items-center justify-center"
+              }
+            >
+              <div className="border rounded w-full overflow-hidden flex">
+                <input
+                  type="text"
+                  className="px-4 py-3 w-full"
+                  placeholder="Search..."
+                />
+                <button className="flex items-center justify-center px-4 border-l">
+                  <svg
+                    className="h-4 w-4 text-grey-dark"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            {/* menu and close  */}
+
+            <ul
+              className={
+                click
+                  ? " absolute top-1 right-0 flex lg:hidden "
+                  : "flex lg:hidden"
+              }
+            >
               {click ? (
                 <li onClick={Close} className="cursor-pointer">
                   <svg
@@ -170,36 +209,9 @@ const Navbar = () => {
                 </li>
               )}
             </ul>
-
-            <div className="font-sans text-black bg-white hidden lg:flex items-center justify-center">
-              <div className="border rounded overflow-hidden flex">
-                <input
-                  type="text"
-                  className="px-4 py-2"
-                  placeholder="Search..."
-                />
-                <button className="flex items-center justify-center px-4 border-l">
-                  <svg
-                    className="h-4 w-4 text-grey-dark"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z" />
-                  </svg>
-                </button>
-              </div>
-            </div>
           </div>
         </div>
       </nav>
-      <div className="w-full">
-        {click ? (
-          <div className="w-full h-screen">
-            <SideNav closeNav={Close} />
-          </div>
-        ) : null}
-      </div>
     </>
   );
 };
