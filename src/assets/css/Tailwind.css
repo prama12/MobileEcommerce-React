@@ -12,7 +12,7 @@
 }
 
 .side-Nav {
-  @apply w-full bg-white px-5 md:px-16 py-5;
+  @apply w-full fixed z-50 top-0 left-0 bottom-0 h-screen bg-white px-5 md:px-16 py-5;
 }
 
 .linklist {
