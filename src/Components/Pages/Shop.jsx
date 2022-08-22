@@ -81,6 +81,7 @@ const Shop = () => {
           <div className="col-span-9 flex flex-col gap-10 justify-center items-center w-full  ">
             <div className="grid xsm:grid-cols-2 lg:grid-cols-3 gap-4 px-5 xl:px-10">
               {Pdata.map((val, index) => {
+                console.log(index);
                 return <Card key={val.id} {...val} />;
               })}
             </div>
@@ -98,8 +99,9 @@ const Shop = () => {
             Recommend Product
           </div>
           <div className="w-full overflow-hidden flex justify-center items-center">
-            <div className=" w-11/12 grid grid-cols-12 overflow-x-scroll gap-10 ">
+            <div className=" w-11/12 grid xsm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 overflow-x-scroll items-center justify-center relative gap-10 ">
               {Pdata.map((val, index) => {
+                console.log(index);
                 return <Card key={val.id} {...val} />;
               })}
             </div>

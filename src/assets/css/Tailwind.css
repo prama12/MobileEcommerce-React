@@ -8,11 +8,11 @@
 @tailwind utilities;
 
 .main-Nav {
-  @apply w-full bg-white border-b border-gray-50 px-5 md:px-16 py-5 shadow-sm sticky top-0 z-50;
+  @apply w-full bg-white border-b  border-gray-50 px-5 md:px-16 py-5 shadow-sm sticky top-0 z-50;
 }
 
 .side-Nav {
-  @apply w-full fixed z-50 top-0 no-scrollbar  left-0 bottom-0 h-full overflow-y-scroll bg-white px-5 md:px-16 py-5;
+  @apply w-full fixed z-50 top-0 no-scrollbar transition-all -translate-x-0 duration-300 left-0 bottom-0  overflow-y-scroll bg-white px-5 md:px-16 py-5;
 }
 
 .linklist {
@@ -20,7 +20,7 @@
 }
 
 ul .active {
-  @apply text-purple-600   lg:border-b-2 font-bold  lg:border-purple-600 ;
+  @apply text-purple-600   lg:border-b-2 font-bold  lg:border-purple-600;
 }
 
 .max-w {
