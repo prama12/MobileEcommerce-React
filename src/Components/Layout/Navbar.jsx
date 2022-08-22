@@ -59,14 +59,14 @@ const Navbar = () => {
           <div
             className={
               click
-                ? "flex flex-col gap-6 items-center text-xs font-semibold"
+                ? "flex flex-col divide-y gap-6 px-5 text-xs font-semibold"
                 : " flex  gap-6 items-center text-xs font-semibold"
             }
           >
             <ul
               className={
                 click
-                  ? "px-5 w-full flex flex-col gap-5 divide-y bg-white"
+                  ? " w-full flex flex-col gap-5 divide-y bg-white"
                   : " hidden lg:flex items-center justify-center gap-6  text-gray-800"
               }
             >
@@ -77,7 +77,15 @@ const Navbar = () => {
                   </li>
                 );
               })}
+            </ul>
 
+            <ul
+              className={
+                click
+                  ? "flex pt-5  gap-5 items-start xsm:hidden "
+                  : "  items-center gap-6 hidden xsm:flex "
+              }
+            >
               <li>
                 <NavLink onClick={Close} to="/addtocart" className="linklist">
                   <svg

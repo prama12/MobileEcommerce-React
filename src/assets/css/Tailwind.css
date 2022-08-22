@@ -12,19 +12,15 @@
 }
 
 .side-Nav {
-  @apply w-full fixed z-50 top-0 left-0 bottom-0 h-screen bg-white px-5 md:px-16 py-5;
+  @apply w-full fixed z-50 top-0 no-scrollbar  left-0 bottom-0 h-full overflow-y-scroll bg-white px-5 md:px-16 py-5;
 }
 
 .linklist {
-  @apply hover:text-purple-600 font-medium  font-Mada text-lg  pb-3;
+  @apply hover:text-purple-600 font-medium pt-2 lg:pt-0  font-Mada text-lg;
 }
 
 ul .active {
-  @apply text-purple-600   lg:border-b-2 font-bold  lg:border-purple-600 border-separate;
-}
-
-.navLink {
-  @apply font-Mada py-3 px-2 bg-gray-50 w-11/12 text-lg font-medium animation  hover:text-purple-600;
+  @apply text-purple-600   lg:border-b-2 font-bold  lg:border-purple-600 ;
 }
 
 .max-w {

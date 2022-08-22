@@ -13,7 +13,6 @@ import Login from "./Pages/Login";
 import Signup from "./Pages/Signup";
 import Item from "./Common/Item";
 import ScrollToTop from "./scrollToTop/ScrollToTop";
-import SideNav from "./Layout/SideNav";
 
 const Routing = () => {
   return (
