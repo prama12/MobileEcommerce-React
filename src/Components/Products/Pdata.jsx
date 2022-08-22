@@ -7,7 +7,6 @@ const Pdata = [
     price: "$ 40 USD",
     stock: 1305,
   },
-
   {
     id: 2,
     img: "/Images/t-shirt.png",
