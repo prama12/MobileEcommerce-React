@@ -8,7 +8,7 @@ const Navbar = () => {
   const Close = () => setClick(false);
   return (
     <>
-      <nav className={click ? "side-Nav" : "main-Nav"}>
+      {/* <nav onClick={() => Close()} className={click ? "side-Nav" : "main-Nav"}>
         <div
           className={
             click
@@ -72,7 +72,11 @@ const Navbar = () => {
             >
               {Navlinkdata.map((item, index) => {
                 return (
-                  <li onClick={Close} key={index} className={item.cName}>
+                  <li
+                    onClick={click ? handleClick : null}
+                    key={index}
+                    className={item.cName}
+                  >
                     <NavLink to={item.path}>{item.title}</NavLink>
                   </li>
                 );
@@ -148,7 +152,7 @@ const Navbar = () => {
             </ul>
 
             {/* search item  */}
-            <div
+      {/* <div
               className={
                 click
                   ? "font-sans flex md:hidden text-black bg-white w-full  "
@@ -172,11 +176,11 @@ const Navbar = () => {
                   </svg>
                 </button>
               </div>
-            </div>
+            </div> */}
 
-            {/* menu and close  */}
+      {/* menu and close  */}
 
-            <ul
+      {/* <ul
               className={
                 click
                   ? " absolute top-1 right-0 flex lg:hidden "
@@ -216,10 +220,109 @@ const Navbar = () => {
                   </svg>
                 </li>
               )}
-            </ul>
-          </div>
+            </ul> */}
+      {/* </div>
         </div>
-      </nav>
+      </nav> */}
+
+      <div>
+        <div
+          className={click ? "main-container" : ""}
+          onClick={() => Close()}
+        />
+        <nav className="navbar" onClick={(e) => e.stopPropagation()}>
+          <div className="nav-container">
+            <NavLink
+              to="/"
+              className="flex flex-wrap gap-1 items-center text-base font-bold hover:text-black text-gray-600 cursor-pointer"
+            >
+              <div>
+                <svg
+                  width="36"
+                  height="34"
+                  viewBox="0 0 36 34"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M35.0463 0H0.214311C0.0960349 0 0 0.0964564 0 0.215448V33.7193C0 33.8383 0.0960349 33.9347 0.214311 33.9347H35.0463C35.1646 33.9347 35.26 33.8383 35.26 33.7193V0.215448C35.26 0.0964564 35.1646 0 35.0463 0Z"
+                    fill="#0EC5D7"
+                  />
+                  <path
+                    d="M9.31909 7.46802V26.4666"
+                    stroke="white"
+                    stroke-width="3.08178"
+                  />
+                  <path
+                    d="M15.012 7.46802V16.9314"
+                    stroke="white"
+                    stroke-width="3.07593"
+                  />
+                  <path
+                    d="M19.3489 7.46875V10.6831H24.7813L28.722 18.826H32.2703L26.6349 7.46875H19.3489Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M20.9629 14.1665V26.8438"
+                    stroke="white"
+                    stroke-width="3.56014"
+                  />
+                </svg>
+              </div>
+              <div className=" font-Roboto">Online Mobile Store</div>
+            </NavLink>
+            <ul className={click ? "nav-menu active" : "nav-menu"}>
+              <li className="nav-item">
+                <NavLink
+                  exact
+                  to="/"
+                  activeClassName="active"
+                  className="nav-links"
+                  onClick={click ? handleClick : null}
+                >
+                  Home
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink
+                  exact
+                  to="/aboutUs"
+                  activeClassName="active"
+                  className="nav-links"
+                  onClick={click ? handleClick : null}
+                >
+                  About Us
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink
+                  exact
+                  to="/shop"
+                  activeClassName="active"
+                  className="nav-links"
+                  onClick={click ? handleClick : null}
+                >
+                  Shop
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink
+                  exact
+                  to="/contact"
+                  activeClassName="active"
+                  className="nav-links"
+                  onClick={click ? handleClick : null}
+                >
+                  Contact Us
+                </NavLink>
+              </li>
+            </ul>
+            <div className="nav-icon" onClick={handleClick}>
+              <i className={click ? "fa fa-times" : "fa fa-bars"}></i>
+            </div>
+          </div>
+        </nav>
+      </div>
     </>
   );
 };
