@@ -206,9 +206,6 @@ const Home = () => {
           <Testimonials img="/Images/Profile.png" name="Bijay" />
           <Testimonials img="/Images/Profile2.png" name="Prama" />
         </div>
-
-
-        <div className="flex item justify-center gap-11 grid-cols-6"></div>
       </div>
     </>
   );
