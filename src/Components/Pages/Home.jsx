@@ -208,7 +208,7 @@ const Home = () => {
         </div>
 
 
-        <div className="flex item gap-11 grid-cols-6"></div>
+        <div className="flex item justify-center gap-11 grid-cols-6"></div>
       </div>
     </>
   );
