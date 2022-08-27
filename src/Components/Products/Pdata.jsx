@@ -47,6 +47,14 @@ const Pdata = [
     price: "$ 40 USD",
     stock: 1305,
   },
+  {
+    id: 7,
+    img: "/Images/t-shirt.png",
+    name: "Smart T-Shirt",
+    color: "red",
+    price: "$ 40 USD",
+    stock: 1305,
+  },
 ];
 
 export default Pdata;
