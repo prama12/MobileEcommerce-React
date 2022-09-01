@@ -50,7 +50,7 @@ const Cart = () => {
                   name=""
                 />
                 <div className="flex justify-end">
-                  <button className="btn-withbg">Checkout</button>
+                  <button className="btn-withbg">Check</button>
                 </div>
 
                 <div className="w-full flex justify-between items-center mt-2 ">
